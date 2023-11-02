@@ -1,0 +1,61 @@
+/* FONT POPPINS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* ===== VARIABLES CSS ===== */
+:root {
+  /* Colors */
+  --body-color: #0b0a09;
+  --white-color: #ffffff;
+  --text-color: #9d9895;
+
+  /* Font Family */
+  --body-font: "Poppins", sans-serif;
+
+  /* Font Size */
+  --normal-font-size: 0.938rem;
+
+  /* Font Weight */
+  --font-semi-bold: 600;
+  --font-medium: 500;
+  --font-regular: 400;
+}
+
+/* ===== BASE ===== */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
