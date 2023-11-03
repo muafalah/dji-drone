@@ -38,3 +38,17 @@ const blurHeader = () => {
     : header.classList.remove("blur-header");
 };
 window.addEventListener("scroll", blurHeader);
+
+// Swiper Product
+let swiperProduct = new Swiper(".product__swiper", {
+  loop: true,
+  slidesPerView: "auto",
+  centeredSlides: "auto",
+  grabCursor: true,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+  },
+});
