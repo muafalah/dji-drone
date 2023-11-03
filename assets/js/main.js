@@ -101,5 +101,7 @@ sr.reveal(`.home__tooltip`, { origin: "top" });
 sr.reveal(`.home__button, .specification__button, .footer`, {
   origin: "bottom",
 });
-sr.reveal(`.about__data`, { origin: "left" });
-sr.reveal(`.about__img, .specification__tooltip`, { origin: "right" });
+sr.reveal(`.about__data, .contact__detail`, { origin: "left" });
+sr.reveal(`.about__img, .specification__tooltip, .contact__form`, {
+  origin: "right",
+});
