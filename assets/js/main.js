@@ -85,3 +85,21 @@ const scrollActive = () => {
   });
 };
 window.addEventListener("scroll", scrollActive);
+
+// Scroll Reveal Animation
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+});
+
+sr.reveal(`.home__social, .product__container, .brand__container`);
+sr.reveal(`.home__title span:nth-child(1)`, { origin: "left", opacity: 1 });
+sr.reveal(`.home__title span:nth-child(3)`, { origin: "right", opacity: 1 });
+sr.reveal(`.home__tooltip`, { origin: "top" });
+sr.reveal(`.home__button, .specification__button, .footer`, {
+  origin: "bottom",
+});
+sr.reveal(`.about__data`, { origin: "left" });
+sr.reveal(`.about__img, .specification__tooltip`, { origin: "right" });
